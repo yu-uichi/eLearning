@@ -1,0 +1,18 @@
+
+/*
+    font.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/09/14
+    Last Updated : 2016/09/14
+    [ note ]
+*/
+
+/* フォント読み込み */
+@font-face{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    font-family : 'Noto';
+    src : url(../font/NotoSans-Regular.ttf);
+}
+
+/* フォント適用 */
+html, body{ font-family : 'Noto', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'sans-serif'; }

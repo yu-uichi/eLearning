@@ -1,0 +1,70 @@
+<!-- エディタヘッダー -->
+
+<!-- css -->
+<link rel="stylesheet" href="css/reset.css"                 >
+<link rel="stylesheet" href="css/font.css"                  >
+<link rel="stylesheet" href="css/load_diagram.css"          >
+<link rel="stylesheet" href="%CSS_DIR%/page_editer.css"     >
+<link rel="stylesheet" href="%CSS_DIR%/layer_canvas.css"    >
+<link rel="stylesheet" href="%CSS_DIR%/card.css"            >
+<link rel="stylesheet" href="%CSS_DIR%/layer_menu.css"      >
+<link rel="stylesheet" href="%CSS_DIR%/layer_subview.css"   >
+<link rel="stylesheet" href="%CSS_DIR%/layer_help.css"      >
+<link rel="stylesheet" href="%CSS_DIR%/layer_window.css"    >
+
+
+
+<!-- jquery -->
+<script src="js/jquery/jquery-2.2.1.min.js"     ></script>
+<script src="js/jquery/jPrintArea.js"           ></script>      <!-- 印刷用プラグイン -->
+<script src="js/jquery/jquery.mousewheel.min.js"></script>      <!-- マウスホイール用プラグイン -->
+
+<!-- AKaToolLib -->
+<script src="js/lib/AKaToolLib.js"              ></script>
+<script src="js/lib/Value.js"                   ></script>
+<script src="js/lib/Point.js"                   ></script>
+<script src="js/lib/Size.js"                    ></script>
+<script src="js/lib/Rect.js"                    ></script>
+<script src="js/lib/Phrase.js"                  ></script>
+<script src="js/lib/DataIO.js"                  ></script>
+<script src="js/lib/AKaToolDataIO.js"           ></script>
+<script src="js/lib/BrowserCheck.js"            ></script>
+
+<script src="js/LoadList.js"                    ></script>
+<script src="js/LoadDiagram.js"                 ></script>
+
+<!-- HTMLテンプレート読み込み -->
+%INCLUDE_CODE%
+
+<!-- 定数読み込み -->
+<script>
+    AKaToolLib.SITE_URL             = '%SITE_URL%';
+    AKaToolLib.LOAD_DIAGRAM_DATA    = '%LOAD_DIAGRAM_DATA%';
+    AKaToolLib.MAX_CARD             = '%MAX_CARD%';
+    AKaToolLib.MAX_ARROW            = '%MAX_ARROW%';
+    
+</script>
+
+<!-- JavaScript -->
+<script src="%JS_DIR%/Main.js"                                                  ></script>
+<script src="%JS_DIR%/DataIO.js"                                                ></script>
+<script src="%JS_DIR%/Editer.js"                                                ></script>
+<script src="%JS_DIR%/Layer_Base.js"                                            ></script>
+<script src="%JS_DIR%/layer_canvas/category/Category.js"                        ></script>
+<script src="%JS_DIR%/layer_canvas/category/Category_Controller.js"             ></script>
+<script src="%JS_DIR%/layer_canvas/card/Card.js"                                ></script>
+<script src="%JS_DIR%/layer_canvas/card/CardPainter.js"                         ></script>
+<script src="%JS_DIR%/layer_canvas/card/CardPainter_Controller.js"              ></script>
+<script src="%JS_DIR%/layer_canvas/arrow/Arrow.js"                              ></script>
+<script src="%JS_DIR%/layer_canvas/arrow/ArrowPainter.js"                       ></script>
+<script src="%JS_DIR%/layer_canvas/arrow/ArrowPainter_Controller.js"            ></script>
+<script src="%JS_DIR%/layer_canvas/Layer_Canvas.js"                             ></script>
+<script src="%JS_DIR%/layer_subview/Layer_Subview.js"                           ></script>
+<script src="%JS_DIR%/layer_help/Help_Controller.js"                            ></script>
+<script src="%JS_DIR%/layer_help/Layer_Help.js"                                 ></script>
+<script src="%JS_DIR%/layer_menu/Layer_Menu.js"                                 ></script>
+<script src="%JS_DIR%/layer_window/Window_Controller.js"                        ></script>
+<script src="%JS_DIR%/layer_window/Layer_Window.js"                             ></script>
+
+<!-- Language -->
+<script src="%JS_DIR%/language/ja.js"                                           ></script>

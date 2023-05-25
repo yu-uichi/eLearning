@@ -1,0 +1,127 @@
+
+/*
+    layer_canvas.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/08/15
+    Last Updated : 2016/08/15
+    [ note ]
+*/
+
+
+
+/* ウィンドウ表示時の背景 */
+#window_background{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Content */
+    opacity     : 0 ;                           /* 要素自体の透明度          */
+    pointer-events  : all;                      /* マウス判定の設定          */
+    background  : rgba( 43, 43, 43, 0.8 );      /* 背景色                    */
+}
+
+/* ウィンドウ */
+#window{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    box-sizing  : border-box;                   /* 枠と余白を含んだ幅指定    */
+
+    /* Position */
+    position    : relative ;                    /* 表示位置                  */
+    top         : -640px ;                      /* 表示位置                  */
+
+    /* Box */
+    display         : inline-table ;            /* 表示形式                  */
+    opacity         : 0 ;                       /* 要素の透明度              */
+
+    padding         : 32px ;                    /* パディング                */
+    border-radius   : 8px 8px 8px 8px;          /* 角を丸くする              */
+    box-shadow      : 0px 8px 32px 0px #000;    /* 影                        */
+
+    /* Content */
+    background  : rgba( 255, 255, 255, 1 );     /* 背景色                    */
+}
+
+
+
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+
+/* タイトル */
+#window .title{
+    font-size       : 20px;
+    margin-bottom   : 32px;
+    margin-left     :  0px;
+}
+
+
+
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+
+/* 保存,読み込み先の指定ボタン */
+#window .targetSelectButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    box-sizing : border-box ;
+    width   : 240px ;
+    height  : 240px ;
+    
+    font-size : 20px ;
+    cursor : pointer ;   
+}
+
+/* 読み込みウィンドウの中央マージン */
+#window_load button:nth-child(1){ margin-right : 32px ;}
+
+/* 保存ウィンドウの中央マージン */
+#window_save div{
+    margin-right : 32px ;
+    float : left ;
+}
+
+/* 保存ウィンドウのサーバに保存，上書きボタン */
+#window_save div button{
+    display : block ;
+    height : 110px !important;
+}
+
+/* 保存ウィンドウのサーバに保存，上書きボタンの間のマージン*/
+#window_save div button:nth-child(1){ margin-bottom : 20px ;}
+
+/* 保存情報の設定ウィンドウ */
+#window_property td:nth-child(2n){ text-align : left ; }
+#window_property td:nth-child(2n+1){
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    text-align      : right;
+    vertical-align  : top  ;
+}
+#window_property tr:nth-child(2) td{ padding-top : 8px ; }
+#window_property .propertyInput{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    width       : 200px;
+    margin-left : 8px ;
+}
+
+/* 読み込みリスト */
+#loadDiagramArea{
+    width  : 800px ;
+    height : 400px ;
+}
+
+
+
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+
+/* フッターボタン */
+#window .footerButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    width       : 100px ;
+    margin-top  :  32px ;
+    font-size   :  16px ;
+    cursor      : pointer;
+}
+/* キャンセルボタン */
+#window .cancel     { float : left ; }
+/* 保存実行ボタン */
+#window .saveConfirm{ float : right; }
+/* 読み込み実行ボタン */
+#window .loadConfirm{ float : right; }

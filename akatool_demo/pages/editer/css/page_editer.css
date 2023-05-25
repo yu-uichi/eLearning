@@ -1,0 +1,79 @@
+
+/*
+    page_editer.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/08/15
+    Last Updated : 2016/08/15
+    [ note ]
+*/
+
+
+
+html, body{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    width       : 100% ;                        /* 横幅                      */
+    height      : 100% ;                        /* 縦幅                      */
+    user-select : none ;                        /* 文字列の選択禁止          */
+        -moz-user-select    : none ;                /* Firefox               */
+        -webkit-user-select : none ;                /* Safari、Chromeなど    */
+        -ms-user-select     : none ;                /* IE10〜                */
+}
+
+
+
+body{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Content */
+    background  : #FFF7ED ;                     /* 背景色                    */
+    overflow    : hidden  ;                     /* はみ出箇所は非表示        */
+}
+
+
+
+/* 絶対位置表示のテーブル( 要素の垂直中央揃えに利用 ) */
+.layer{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width   : 100% ;                            /* 横幅                      */
+    height  : 100% ;                            /* 縦幅                      */
+
+    /* Position */
+    position: absolute ;                        /* 表示位置                  */
+
+    /* Box */
+    display : table ;                           /* 表示形式                  */
+
+    /* Pointer */
+    pointer-events  : none ;                    /* マウス判定の設定          */
+}
+
+
+
+/* 縦横中央揃え */
+.center{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width   : 100% ;                            /* 横幅                      */
+    height  : 100% ;                            /* 縦幅                      */
+
+    /* Box */
+    display : table-cell ;                      /* 表示形式                  */
+
+    /* Content */
+    text-align      : center ;                  /* 水平揃え位置              */
+    vertical-align  : middle ;                  /* 垂直揃え位置              */
+}
+
+
+
+/* 強制的に不透明にする */
+.opacity{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    opacity : 1 !important;                     /* 不透明度                  */
+}
+
+/* カーソルを通常状態にする */
+.inactive_cursor{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    cursor  : default !important;               /* マウスカーソルの形状      */
+}

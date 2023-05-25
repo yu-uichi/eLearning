@@ -1,0 +1,196 @@
+
+/*
+    card.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/08/15
+    Last Updated : 2016/08/15
+    [ note ]
+*/
+
+
+
+/* カード全体 */
+#canvas .card{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    box-sizing  : border-box ;          /* 縦横幅指定でContentの幅を指定する */
+
+    /* Position */
+    position    : absolute;             /* 絶対位置への配置                  */
+    float       : left ;
+
+    /* Box */
+    margin          :   0px ;
+    padding-bottom  :   8px ;
+    border : #999 solid 2px ;
+
+    /* Content */
+    text-align  : center ;
+    font-size   :  14px  ;
+
+    /* Pointer */
+    pointer-events: visiblePainted;             /* マウス判定の設定          */
+    cursor  : move ;                            /* マウスカーソルの形状      */
+}
+
+/* 選択状態のカード */
+/* 枠を太く、赤くする */
+#canvas .selecting{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    border-color : #f88 !important;
+    border-width :  4px !important;
+}
+
+
+
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+
+/* 看護関連図可視化状態のカード */
+#canvas .lowLight{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    opacity : 0.2 ;
+}
+
+/* 看護関連図可視化状態で選択可能なカード */
+#canvas .highlight_selectable{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Box */
+    border-color : #ff7f00 !important;
+
+    /* Content */
+    opacity : 1 ;
+
+    /* Pointer */
+    cursor  : pointer ;                         /* マウスカーソルの形状      */
+}
+
+/* 看護関連図可視化状態で選択中のカード */
+#canvas .highlight_selecting{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Box */
+    border-width :  6px !important;
+    border-style : solid !important;
+
+    /* Content */
+    background-image : url( ../img/card/highlight_target.png ) !important;
+    background-size     : 60% !important;
+    background-position : left -8px bottom -12px !important;
+    background-repeat   : no-repeat !important;
+}
+
+
+
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+
+/* タイトル */
+.card .title{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Box */
+    margin  :   8px ;
+
+    /* Content */
+    white-space : nowrap;                   /* 自動改行禁止 */
+    /* background  : #0f0;/* [　test　] */
+}
+/* タイトル選択欄 */
+.card .tytle select{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Pointer */
+    cursor : pointer ;
+}
+
+
+
+/* 内容 */
+.card .content{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Box */
+    margin : 8px  0px ;
+
+    /* Content */
+    /* background  : #00f;/* [　test　] */
+}
+
+/* 内容入力欄 */
+.card .content textarea {
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    box-sizing  : border-box;       /* 縦横幅指定にpaddingとborderを含める   */
+    width   : 100% ;
+
+    /* Content */
+    font-size   :  12px ;
+}
+
+/* フッターボタン */
+.card .footerButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width : 80px ;
+
+    /* Box */
+    margin-bottom : 8px ;
+    cursor : pointer ;
+}
+
+/* キャンセルボタン */
+.card .cancelButton{ float : left; }
+
+/* 確定ボタン */
+.card .confirmButton{ float : right; }
+
+
+
+/* 削除ボタン */
+.card .deleteButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width  :  20px ;
+    height :  20px ;
+
+    /* Position */
+    position : absolute ;
+    top     :   0px ;
+    right   : -20px ;
+
+    /* Content */
+    background          : #F72817 ;
+    background-image    : url(../img/menu_icon/delete.png);
+    background-size     : 16px auto;
+    background-position : 50% 50%;              /* 背景画像の表示開始位置    */
+    background-repeat   : no-repeat;            /* 背景画像をリピートしない  */
+
+    color       : #fff ;
+    font-size   : 16px ;
+    font-weight : bold ;
+    cursor : pointer ;
+}
+
+
+
+/* 矢印ボタン */
+.card .arrowButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width  :  32px ;
+    height :  32px ;
+
+    /* Position */
+    box-sizing  : border-box ;          /* 縦横幅指定でContentの幅を指定する */
+    position    : absolute ;
+
+    /* Box */
+    border  : #111 solid 2px ;
+
+    /* Content */
+    background          : rgba( 43, 43, 43, 0.6 ) ;
+    background-image    : url(../img/menu_icon/add.png);
+    background-position : 50% 50%;              /* 背景画像の表示開始位置    */
+    background-repeat   : no-repeat;            /* 背景画像をリピートしない  */
+
+    opacity     : 0.5 ;
+    font-weight : bold ;
+    cursor : pointer ;
+}

@@ -1,0 +1,73 @@
+
+/*
+    layer_help.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/09/05
+    Last Updated : 2016/09/05
+    [ note ]
+*/
+
+
+
+/* ヘルプウィンドウの描画領域 */
+#help_window_area{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Position */
+    position    : absolute ;                    /* 表示位置                  */
+    right       : 16px ;                        /* 右からの位置              */
+    bottom      : 16px ;                        /* 下からの位置              */
+    
+}
+
+
+
+/* ヘルプウィンドウ */
+#help_window{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    box-sizing  : border-box ;                  /* 幅指定にborderまで含む    */
+    width       : 0px ;                         /* 横幅                      */
+    height      : 0px ;                         /* 縦幅                      */
+
+    /* Box */
+    opacity       : 0 ;                         /* 要素の透明度              */
+
+    padding       : 20px ;                      /* パディング                */
+    border-radius : 8px 8px 8px 8px;            /* 角丸め                    */
+    box-shadow    : 0px 8px 32px 0px #000;      /* 影                        */
+
+    /* Content */
+    background-color    : #ff7f00;
+    background-image    : url(../img/help/background.png);
+    background-position : right -28px bottom -40px;
+    background-size     : 60% ;
+    background-repeat   : no-repeat;
+
+    color       : #fff;                         /* 文字色                   */
+    font-size   : 16px ;                        /* 文字サイズ               */
+    overflow    : hidden ;                      /* はみ出した際の処理       */
+}
+
+
+
+/* ヘルプウィンドウのタイトル */
+#help_window_tytle{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width       : 100% ;                        /* 横幅                      */
+
+    /* Box */
+    margin-bottom :  32px ;                     /* 下マージン                */
+
+    /* Content */
+    text-align  : center;                       /* 水平中央揃え              */
+}
+
+
+
+/* ヘルプウィンドウの内容 */
+#help_window_content{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width       : 100% ;                        /* 横幅                      */
+}

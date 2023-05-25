@@ -1,0 +1,18 @@
+
+/*
+    layer_subview.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/09/09
+    Last Updated : 2016/09/09
+    [ note ]
+*/
+
+
+
+.subview_canvas{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Position */
+    position    : absolute;
+    right       : 0px ;
+    top         : 0px ;
+}

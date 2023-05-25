@@ -1,0 +1,78 @@
+<!--
+    [ note ]
+        [ レイヤー構造 ]
+        ↑画面背面
+            body
+            ├edit canvas_layer
+            │├first_message //edit base layer
+            │├card layer
+            │└arrow layer
+            ├menu layer
+            ├help layer
+            └window layer
+        ↓画面前面
+-->
+
+
+
+<!-- 編集エリアレイヤー( マウスイベントはこのレイヤーで受け取る ) -->
+<div class="layer" id="canvas_layer">
+    <!-- 背景メッセージ -->
+    <div class="layer"><div id="dblclick_message" class="center"></div></div>
+    <!-- 描画領域レイヤー -->
+    <div class="layer" id="canvas"></div>
+</div>
+
+<!-- メニューレイヤー -->
+<div class="layer" id="menu_layer">
+    
+    
+    <div id="serviceName">AKaTool</div>
+
+    <div id="menu_body">
+        <div class="menuButton chooseable" id="menu_button_add"         > 追加              </div>
+        <div class="menuButton chooseable" id="menu_button_problemView" > 看護問題の可視化  </div>
+        <div class="menuButton chooseable" id="menu_button_save"        > 保存              </div>
+        <div class="menuButton chooseable" id="menu_button_load"        > 読み込み          </div>
+        <div class="menuButton chooseable" id="menu_button_print"       > 印刷              </div>
+        <div class="menuButton chooseable" id="menu_button_help"        > ヘルプ            </div>
+        <div class="menuButton chooseable" id="menu_button_delete"      > すべて削除        </div>
+    </div>
+
+    <!-- [ 調整中 ] -->
+    <div id="menu_footer">
+        <table>
+            <tr><td colspan="3" id="menu_zoom_rate"></td></tr>
+            <tr><td id="menu_zoom_out"      class="menu_zoom_control">
+            </td><td id="menu_zoom_reset"   class="menu_zoom_control">
+            </td><td id="menu_zoom_in"      class="menu_zoom_control">
+            </td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- サブビューレイヤー -->
+<div class="layer" id="subview_layer">
+    <canvas id='subview_diagram'  class="subview_canvas"></canvas>
+    <canvas id='subview_viewPort' class="subview_canvas"></canvas>
+</div>
+
+
+<!-- ヘルプレイヤー -->
+<div class="layer" id="help_layer">
+
+    <div id="help_window_area">
+        <div id="help_window">
+            <div id="help_window_tytle"  ></div>
+            <div id="help_window_content"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ウィンドウレイヤー -->
+<div class="layer" id="window_layer">
+</div>

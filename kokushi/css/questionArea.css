@@ -1,0 +1,43 @@
+.todaysStudyTime {
+    position: relative;
+    top : 0;
+    right : 0;
+}
+
+.questionArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questionText {
+    width: 80%;
+    height: 20%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.queImage img {
+    width: 100%;
+}
+
+.optionAnswer {
+    width: 50%;
+}
+
+.optionAnswer > label {
+    width: 90%;
+}
+.optionAnswer img{
+    width: 100%;
+}
+
+.optionAnsObj {
+    width: 10%;
+}
+
+.queHide {
+    display: none;
+}

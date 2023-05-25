@@ -1,0 +1,59 @@
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.resultTable{
+    width: 50%;
+}
+
+.resultTable tbody tr{
+    cursor: pointer;
+}
+
+#modal-content{
+	width:80%;
+    height: 80%;
+	margin:  auto;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff;
+	z-index:2;
+    position: fixed;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.modalProArea{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+.modalQueImage img{
+    width: 100%;
+}
+
+.modalProOp{
+    width: 100%;
+}
+
+.modalClose{
+    position: sticky;
+    cursor: pointer;
+    height: 0;
+    text-align: right;
+}
+
+#modal-overlay{
+	z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}

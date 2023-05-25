@@ -1,0 +1,161 @@
+
+/*
+    layer_menu.css
+    Copyright : Tsubasa Nakano
+    Created : 2016/08/15
+    Last Updated : 2016/08/15
+    [ note ]
+*/
+
+/* メニューレイヤー */
+#menu_layer{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width       : 200px ;                       /* 横幅                      */
+    max-width   : 200px ;                       /* 横幅                      */
+
+    /* Position */
+    float       : left ;                        /* 左寄せ配置                */
+
+    /* Content */
+    background  : #34495E ;                     /* 背景色                    */
+    color       : #ffffff ;                     /* 文字色                    */
+}
+
+
+
+/* メニューの内容 */
+#menu_body{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width       : 100% ;                        /* 横幅                      */
+    height      : 100% ;                        /* 縦幅                      */
+
+    /* Position */
+    position    : relative  ;                   /* 相対位置への配置          */
+    display     : table-row ;                   /* tr要素のように使用        */
+
+    /* Pointer */
+    pointer-events  : all;                      /* マウス判定の設定          */
+}
+
+
+
+/* メニューボタン */
+#menu_body .menuButton{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Box */
+    padding         : 20px 20px 20px 52px;      /* パディング上右下左        */
+    border-bottom   : 1px solid #aaa;           /* 下枠線 : 太さ, 種類, 色   */
+
+    /* Content */
+    background-position : 20px center;          /* 背景画像の表示開始位置    */
+    background-repeat   : no-repeat;            /* 背景画像をリピートしない  */
+    
+    /* Position */
+    position    : relative  ;                   /* 相対位置への配置          */
+
+    /* Content */
+    cursor          : pointer ;                 /* マウスポインタを指にする  */
+}
+
+/* 選択可能なメニューボタン( マウスホバー ) */
+#menu_body .chooseable:hover {
+    background-color : #1BBC9B;                 /* 背景色                    */
+}
+
+/* 選択中のボタン */
+#menu_body .active {
+    background-color : #ff7f00 !important;      /* 背景色                    */
+}
+
+/* 使用不可のボタン */
+#menu_body .inavle {
+    opacity : 0.5;
+}
+
+
+
+/* サービス名 */
+#serviceName{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    padding     : 32px 0px;
+    text-align  : center;
+    font-size   : 48px;
+    border-bottom   : 1px solid #aaa;
+    cursor          : pointer ;                 /* マウスポインタを指にする  */
+    pointer-events  : all;                      /* マウス判定の設定          */
+}
+
+/* 各ボタンの画像 */
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+/* 追加ボタン */
+#menu_button_add            { background-image : url(../img/menu_icon/add.png        ); }
+/* 看護問題の可視化ボタン */
+#menu_button_problemView    { background-image : url(../img/menu_icon/search.png     ); }
+/* 保存ボタン */
+#menu_button_save           { background-image : url(../img/menu_icon/save.png       ); }
+/* 読み込みボタン */
+#menu_button_load           { background-image : url(../img/menu_icon/load.png       ); }
+/* 印刷ボタン */
+#menu_button_print          { background-image : url(../img/menu_icon/print.png      ); }
+/* ヘルプボタン */
+#menu_button_help           { background-image : url(../img/menu_icon/help.png       ); }
+/* 設定ボタン */
+#menu_button_config         { background-image : url(../img/menu_icon/setting.png    ); }
+/* 全て削除ボタン */
+#menu_button_delete         { background-image : url(../img/menu_icon/delete.png     ); }
+
+
+
+/* メニューのフッター */
+#menu_footer{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    width       : 100% ;
+
+    /* Position */
+    position    : absolute ;
+    display     : table;
+    bottom      : 0px ;
+
+    /* Content */
+    background  : #2b2b2b;
+
+    /* Pointer */
+    pointer-events  : all;
+}
+
+#menu_footer table{ width : 100% ; }
+
+#menu_footer td{
+    text-align : center ;
+    vertical-align : middle ;
+}
+
+/* 拡大率表示エリア */
+#menu_zoom_rate{ height : 32px ; }
+
+/* 拡大率操作エリア */
+#menu_footer .menu_zoom_control{
+/* - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - --|-- - */
+    /* Size */
+    height      : 16px ;
+    /* Content */
+    font-size   : 8px ;
+    background-position : 8px center;
+    background-repeat   : no-repeat;
+    background-size     : 16px ;
+    /* Pointer */
+    cursor      : pointer ;
+}
+#menu_footer .menu_zoom_control:hover{ background-color : #6b6b6b; }
+
+#menu_zoom_out{
+    padding-left : 20px ;
+    background-image : url(../img/menu_icon/zoom_out.png);
+}
+#menu_zoom_in {
+    padding-left : 20px ;
+    background-image : url(../img/menu_icon/zoom_in.png );
+}
